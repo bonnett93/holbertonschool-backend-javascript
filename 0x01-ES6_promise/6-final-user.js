@@ -13,7 +13,6 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       const { value } = response;
       promiseArray.push({ status, value });
     });
-    console.log(promiseArray);
     return promiseArray;
   });
 }
