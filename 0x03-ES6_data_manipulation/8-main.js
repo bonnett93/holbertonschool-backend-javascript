@@ -5,3 +5,4 @@ console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), 
 const set = new Set(['id-test', 'id-chicken', 'id-user', , 'id-id-']);
 console.log(cleanSet(set, 'id-'));
 console.log(cleanSet(set));
+console.log(cleanSet(set), []);
