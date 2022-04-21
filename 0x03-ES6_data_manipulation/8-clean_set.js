@@ -1,8 +1,8 @@
 export default function cleanSet(mySet, startString) {
-  if (startString.length === 0) return '';
+  if (!(startString)) return '';
   const sliceStart = startString.length;
   const myArray = [...mySet]
-    .filter((string) => string.startsWith(startString))
+    .filter((string) => (string ? string.startsWith(startString) : false))
     .map((string) => string.slice(sliceStart));
   return myArray.join('-');
 }
